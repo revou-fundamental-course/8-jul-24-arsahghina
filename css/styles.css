@@ -6,3 +6,55 @@ main {
     display: flex;
     justify-content: space-around;
 }
+
+form {
+    background-color: rgb(215, 182, 199);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.input-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.submit {
+    background-color: rgb(146, 187, 225);
+    border: 1px solid rgb(66, 134, 230);
+}
+
+.reset {
+    background-color: rgb(168, 178, 188);
+    border: 1px solid rgb(66, 134, 230);
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.result-section {
+    text-align: center; 
+    background-color: rgb(255, 233, 245); 
+    border-radius: 8px; 
+    padding: 8px;
+}
+
+@media only screen and (max-width: 425px) {
+    main {
+        flex-direction: column;
+    }
+    
+    .result-content {
+        display: block !important;
+    }
+}

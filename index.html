@@ -14,18 +14,19 @@
         <h1>Calculator BMI</h1>
     </header>
 
-    <main style="display: flex; justify-content: space-around;">
+    <main class="main">
         <!--Left Content-->
         <section>
             <!--Main Article-->
             <article>
-                <p>HAHAHHA APA</p>
+                <p>Temukan apakah Anda berada pada berat badan ideal dengan Kalkulator BMI berikut!</p>
             </article>
 
             <!--Form-->
             <section>
-                <form> 
+                <form class="form">
                     <div>
+                        <div class="input-title">Jenis Kelamin</div>
                         <input type="radio" id="selection-man"><label for="selection-man">Laki-Laki</label>
                         <input type="radio" id="selection-woman"><label for="selection-woman">Perempuan</label>
                     </div>
@@ -42,8 +43,8 @@
                         <input type="number" id="input-tinggi-badan">
                     </div>      
                     <div>
-                        <button>Submit BMI</button>
-                        <button>Reset</button>
+                        <button class="button submit" type="button" onclick="updateResult();">Submit BMI</button>
+                        <button class="button reset" type="button" onclick="updateResult();">Reset</button>
                     </div>
                 </form>
             </section>
@@ -55,13 +56,25 @@
                 </header>
 
                 <article>
-                    <p>YAA KEUNGGULANNYA APAA</p>
+                    <p>Alat canggih ini menawarkan:
+                        <br>
+                        1. Kemudahan Penggunaan: Cukup masukkan berat dan tinggi badan Anda, dan dapatkan hasil dalam sekejap.
+                        <br>
+                        2. Akurasi Tinggi: Perhitungan yang tepat untuk memberikan informasi kesehatan yang Anda butuhkan.
+                        <br>
+                        3. Antarmuka Intuitif: Desain yang ramah pengguna, cocok untuk semua usia.
+                        <br>
+                        4. Panduan Kesehatan: Dapatkan saran kesehatan berdasarkan kategori BMI Anda.
+                        <br>
+                        5. Gratis dan Tanpa Iklan: Nikmati alat yang bebas gangguan dan sepenuhnya gratis.
+                        <br>
+                        Gunakan Kalkulator BMI kami hari ini dan ambil langkah pertama menuju gaya hidup lebih sehat dan seimbang!</p>
                 </article>
             </section>
         </section>
 
         <!--Right Content-->
-        <section>
+        <section class="main-content result-content" style="display: none;">
             <!--Result Article-->
             <article>
                 <header>
@@ -69,7 +82,13 @@
                 </header>
 
                 <!--Result Section-->
-                <section></section>
+                <section class="result-section">
+                    <p>Hasil Result adalah</p>
+
+                    <h2 id="bmi-result">24.7</h2>
+
+                    <p>Anda Memiliki Berat Badan Berlebihan</p>
+                </section>
 
                 <!--Result Article-->
                 <article></article>
@@ -80,7 +99,8 @@
         </section>
 
     </main>
- 
+    
+    <script src="js/script.js"></script>
 </body>
 
 </html> 
